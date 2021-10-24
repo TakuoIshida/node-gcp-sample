@@ -20,7 +20,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.status(200).send('Hello, world!').end();
+  res.status(200).send(`Hello, world!!!!!!!. ${process.env.MY_VAR}`).end();
 });
 
 // Start the server
